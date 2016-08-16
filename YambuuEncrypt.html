@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Secure email system</title>
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<style media="screen">
+			.topSection {
+				background-color: #11a049;
+				height: 300px;
+			}
+			.logoSide img {
+				height: 90px;
+				margin-top: 40px;
+			}
+			.yambuuLema {
+				border-left: 1px solid #ffffff;
+				margin-top: 50px;
+			}
+			.yambuuLema h1 {
+				font-family: 'Helvetica';
+				font-weight: 400;
+				color: #FFFFFF;
+				font-size: 3.3em;
+			}
+			.bottomSection {
+				background-color: #3B4856;
+				height: 1025px;
+			}
+			.bottomContent {
+				margin-top: -120px;
+			}
+			.bottomSection .contentEmail {
+				background-color: #FFFFFF;
+				text-align: center;
+				border-top-left-radius: 10px;
+				border-top-right-radius: 10px;
+				height: 300px;
+			}
+			.bottomSection .contentEmail h1 {
+				font-family: 'Helvetica';
+				font-weight: 100;
+				font-size: 30px;
+				color: #2E4255;
+				margin-top: 50px;
+				margin-bottom: 40px;
+			}
+			.bottomSection .contentEmail p {
+				font-family: 'Helvetica';
+				font-weight: 300;
+				color: #7C888D;
+				font-size: 22px;
+				margin-bottom: 40px;
+			}
+			.bottomSection .contentEmail span {
+				color: #11a049;
+			}
+			.bottomSection .contentEmail a {
+				font-family: 'Helvetica';
+				font-size: 18px;
+				font-weight: 300;
+				text-align: center;
+				background-color: #11a049;
+				color: #ffffff;
+				text-decoration: none;
+				padding: 10px 50px;
+				border-radius: 5px;
+				box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.5);
+				cursor: pointer;
+			}
+			.bottomSection .contentEmail a:hover {
+				background-color: #09873b;
+			}
+			.bottomSection .contentEmail a:focus {
+				outline: none;
+			}
+			.bottomSection .imgBackground {
+				background-image: url(images/Mailpic.jpeg);
+				background-size: cover;
+				height: 300px;
+			}
+			.bottomSection .secondContent {
+				background-color: #FFFFFF;
+				text-align: center;
+				height: 190px;
+			}
+			.bottomSection .secondContent p {
+				font-family: 'Helvetica';
+				font-size: 22px;
+				font-weight: 300;
+				color: #7C888D;
+				margin-top: 35px;
+				margin-bottom: 30px;
+			}
+			.bottomSection .secondContent a {
+				font-family: 'Helvetica';
+				font-size: 18px;
+				font-weight: 300;
+				text-align: center;
+				background-color: #11a049;
+				color: #ffffff;
+				text-decoration: none;
+				padding: 10px 50px;
+				border-radius: 5px;
+				box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.5);
+				cursor: pointer;
+			}
+			.bottomSection .secondContent a:hover {
+				background-color: #09873b;
+			}
+			.bottomSection .passwordHint {
+				background-color: #F5F5F5;
+				text-align: center;
+				border-bottom: 1px solid #C6C5C5;
+			}
+			.bottomSection .passwordHint h2 {
+				font-family: 'Helvetica';
+				font-weight: 300;
+				color: #9B9B9B;
+				font-size: 16px;
+				margin-bottom: -7px;
+			}
+			.bottomSection .passwordHint h3 {
+				font-family: 'PT Mono';
+				color: #4A4A4A;
+				font-size: 17px;
+				margin-bottom: 15px;
+			}
+			.bottomSection .message {
+				background-color: #F5F5F5;
+				text-align: center;
+				border-bottom: 1px solid #C6C5C5;
+			}
+			.bottomSection .message h2 {
+				font-family: 'Helvetica';
+				font-weight: 300;
+				color: #9B9B9B;
+				font-size: 16px;
+				margin-bottom: -7px;
+			}
+			.bottomSection .message h3 {
+				font-family: 'PT Mono';
+				color: #4A4A4A;
+				font-size: 17px;
+				margin-bottom: 15px;
+			}
+			.bottomSection .message .first {
+				margin-bottom: -10px;
+			}
+			.bottomSection .questions {
+				background-color: #F9F9F9;
+				text-align: center;
+				height: 80px;
+				border-bottom-left-radius: 10px;
+				border-bottom-right-radius: 10px;
+			}
+			.bottomSection .questions p {
+				font-family: 'Helvetica';
+				font-weight: 300;
+				color: #7C888D;
+				font-size: 17px;
+				margin-top: 10px;
+				margin-bottom: 5px;
+			}
+			.bottomSection .questions span {
+				color: #11a049;
+			}
+			.bottomSection .questions a {
+				font-family: 'Helvetica';
+				font-weight: 400;
+				color: #11a049;
+				font-size: 20px;
+				text-decoration: none;
+				cursor: pointer;
+			}
+			.bottomSection .copyright {
+				text-align: center;
+				color: #A7AFB3;
+			}
+			.bottomSection .copyright p {
+				margin: 30px 0;
+			}
+
+		</style>
+
+	</head>
+
+
+	<body>
+
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1 topSection">
+					<div class="col-md-4 col-md-offset-1 logoSide">
+						<img src="images/logo.png" alt="" />
+					</div>
+					<div class="col-md-6 yambuuLema">
+						<h1>Secure email service</h1>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1 bottomSection">
+					<div class="bottomContent">
+						<section>
+							<div class="col-md-10 col-md-offset-1 contentEmail">
+								<h1>New encrypted email from <span>ctorres@yambuu.com</span></h1>
+								<p>
+									You have received a encrypted email.<br>Click on the button bellow to view your secure email.
+								</p>
+								<a href="#">Open email</a>
+							</div>
+						</section>
+						<section>
+							<div class="col-md-10 col-md-offset-1 imgBackground">
+							</div>
+						</section>
+						<section><div class="col-md-10 col-md-offset-1 secondContent"><p>Yambuu Email is a secure system for encrypted emails.<br>To start using our platform create a account here.</p><a href="#">Register</a></div></section><section><div class="col-md-10 col-md-offset-1 passwordHint"><h2>Password hint:</h2><h3>23823</h3></div></section><section><div class="col-md-10 col-md-offset-1 message"><h2>Message expires</h2><h3 class="first">
+							2016-09-08 18:41:47 GMT</h3><h3>(672 hours after this message was sent.)</h3></div></section><section><div class="col-md-10 col-md-offset-1 questions"><p>If you have any questions, please contact me at <span>ctorres@yambuu.com</span></p><a href="#">www.yambuu.com</a></div></section><section><div class="col-md-10 col-md-offset-1 copyright"><p>Copyright © 2016 Yambuu Corp, All rights reserved.</p></div></section></div></div></div></div>
+						</section>
+						</body></html>
